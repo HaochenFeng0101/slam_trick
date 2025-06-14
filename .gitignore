@@ -1,0 +1,58 @@
+/icp/results
+
+
+# Build artifacts
+build/
+devel/ # If using Catkin (even if you're not now, good for general ROS projects)
+install/ # If using Catkin
+
+# CMake build files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+*.cbp # CodeBlocks
+*.xcodeproj/ # Xcode
+*.sln # Visual Studio
+*.suo
+*.user
+*.vcxproj*
+
+# Compiled binaries and libraries
+*.o
+*.so
+*.a
+*.lo
+*.la
+*.dll
+*.exe
+*.pcd
+*.bag
+
+# Eclipse/VSCode/IDE specific files
+.vscode/ # VSCode settings
+.cproject
+.project
+.settings/
+.directory
+
+# ROS specific (even if not Catkin, these can appear)
+log/
+rosout.log
+.ros/
+
+# Python compiled files (if you have any Python scripts in your repo)
+*.pyc
+__pycache__/
+
+# Output directories you created in your main.cpp
+results/
+# Or if you want to be more specific, just the contents:
+# results/output_aligned_clouds/
+# results/output_target_clouds/
+# results/odometry_poses.txt
+
+# Editor backup files
+*~ # Vim, Emacs backup files
+#*# # Emacs lock files
+.#* # Emacs auto-save files
