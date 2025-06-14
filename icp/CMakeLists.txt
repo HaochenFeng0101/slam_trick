@@ -3,14 +3,9 @@ project(icp CXX) # Specify CXX language
 
 set(CMAKE_CXX_STANDARD 17) # Explicitly set C++17
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_POSITION_INDEPENDENT_CODE ON) # Good practice for libraries and executables
+set(CMAKE_POSITION_INDEPENDENT_CODE ON) 
 
 # --- Find Dependencies ---
-
-# Find ROS Libraries (assuming ROS is installed system-wide, e.g., via apt)
-# This approach uses pkg-config, which is common for finding system libraries.
-# You might need to set your CMAKE_PREFIX_PATH if ROS is in a non-standard location.
-# find_package(ros_comm REQUIRED) # This typically finds roscpp, rosbag, sensor_msgs, etc.
 find_package(rosbag REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(tf REQUIRED) # For core TF library
@@ -33,7 +28,7 @@ find_package(Boost 1.58 COMPONENTS system filesystem REQUIRED)
 # --- Include Directories ---
 
 include_directories(
-  ${CMAKE_SOURCE_DIR}/include # If you have a top-level 'include' directory
+  ${CMAKE_SOURCE_DIR}/include 
   ${ros_comm_INCLUDE_DIRS}
   ${rosbag_INCLUDE_DIRS}
   ${sensor_msgs_INCLUDE_DIRS}
@@ -56,10 +51,10 @@ target_link_libraries(icp_lib
   # PCL and its dependencies
   ${PCL_LIBRARIES}
 
-  # Eigen (modern way)
+  
   Eigen3::Eigen
 
-  # spdlog (modern way)
+
   spdlog::spdlog
 )
 
@@ -68,9 +63,8 @@ add_executable(rosbag_icp_pcd_saver
 )
 
 target_link_libraries(rosbag_icp_pcd_saver
-  icp_lib # Link your custom ICP library
-  
-  # ROS Libraries
+  icp_lib 
+ 
   ${ros_comm_LIBRARIES}
   ${rosbag_LIBRARIES}
   ${sensor_msgs_LIBRARIES}

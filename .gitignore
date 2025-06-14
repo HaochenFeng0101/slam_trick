@@ -28,7 +28,7 @@ cmake_install.cmake
 *.exe
 *.pcd
 *.bag
-
+.cache
 # Eclipse/VSCode/IDE specific files
 .vscode/ # VSCode settings
 .cproject
