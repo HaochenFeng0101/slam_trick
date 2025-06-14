@@ -1,12 +1,7 @@
-# Iterative Closest Point (ICP) Algorithm
 
-This repository contains a C++ implementation of the Iterative Closest Point (ICP) algorithm for point cloud registration. ICP is a widely used algorithm to align two point clouds by iteratively minimizing the distance between corresponding points.
-
----
 
 ## ICP Algorithm Logic
 
-The core idea behind ICP is to iteratively find the optimal rigid transformation (rotation and translation) that aligns a **source point cloud** with a **target point cloud**. The algorithm proceeds in a series of steps, repeating until convergence or a maximum number of iterations is reached.
 
 ### 1. Initialization
 
