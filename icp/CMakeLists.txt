@@ -83,3 +83,13 @@ target_link_libraries(rosbag_icp_pcd_saver
   # Boost (for filesystem, if used explicitly in catch blocks)
   ${Boost_LIBRARIES}
 )
+
+
+#second script
+
+add_executable(icp_manual src/icp_bt.cpp)
+target_link_libraries(icp_manual
+    ${PCL_LIBRARIES}
+    Eigen3::Eigen
+    spdlog::spdlog
+)
