@@ -36,7 +36,7 @@ cmake_install.cmake
 .settings/
 .directory
 
-# ROS specific (even if not Catkin, these can appear)
+# ROS specific 
 log/
 rosout.log
 .ros/
@@ -45,9 +45,9 @@ rosout.log
 *.pyc
 __pycache__/
 
-# Output directories you created in your main.cpp
+# Output directories
 results/
-# Or if you want to be more specific, just the contents:
+
 # results/output_aligned_clouds/
 # results/output_target_clouds/
 # results/odometry_poses.txt

@@ -1,12 +1,11 @@
 #ifndef ICP_H
 #define ICP_H
 
-#include <ros/ros.h> // Still need ROS for Eigen types and some ROS/PCL utilities
-#include <pcl_ros/point_cloud.h> // For PCL ROS utilities (e.g., fromROSMsg if you keep that part)
+#include <ros/ros.h> 
+#include <pcl_ros/point_cloud.h> 
 #include <pcl/point_types.h>
 #include <pcl/registration/icp.h>
-// #include <tf/transform_broadcaster.h> // No longer directly used by ICP class
-// #include <tf/transform_listener.h>   // No longer directly used by ICP class
+
 #include <spdlog/spdlog.h> // Include spdlog for logging within ICP class
 
 // Define PointCloud types

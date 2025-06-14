@@ -21,6 +21,7 @@ Eigen::Matrix4f ICPRegistration::align(const PointCloudXYZ_NoColor::Ptr& source_
     icp_.setInputTarget(target_cloud);
 
     // Set initial guess if provided
+    //use pcl lib
     icp_.align(*aligned_cloud, initial_guess);
 
     converged_ = icp_.hasConverged();
