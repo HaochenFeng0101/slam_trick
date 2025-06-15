@@ -5,7 +5,7 @@
 build/
 devel/ # If using Catkin (even if you're not now, good for general ROS projects)
 install/ # If using Catkin
-
+data/
 # CMake build files
 CMakeCache.txt
 CMakeFiles/
