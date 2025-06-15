@@ -1,6 +1,6 @@
 /icp/results
 
-
+*result/
 # Build artifacts
 build/
 devel/ # If using Catkin (even if you're not now, good for general ROS projects)

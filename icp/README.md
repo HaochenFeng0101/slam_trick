@@ -79,4 +79,4 @@ This implementation relies on the following libraries:
 
 * **Eigen:** For linear algebra operations, especially matrix and vector manipulations and SVD.
 * **PCL (Point Cloud Library):** For point cloud data structures, Kd-Tree implementation, and point cloud I/O and transformations.
-* **spdlog:** For convenient and fast logging.
+* **spdlog:** logging
