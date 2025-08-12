@@ -1,0 +1,5 @@
+# In MODULE.bazel
+module(
+    name = "sorting_project",
+    version = "1.0",
+)
